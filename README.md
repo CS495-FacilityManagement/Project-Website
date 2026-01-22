@@ -35,3 +35,18 @@ This website is for course documentation and evaluation only. It is not the depl
 ## Status
 Preliminary version created to satisfy initial course requirements. Content will be updated throughout the semester as deliverables are completed.
 
+## Final Project Website Requirements (Due 4/16)
+The project website will be updated to satisfy final course requirements.
+
+### Expanded Project Deliverables Page
+The deliverables page will include:
+- Links to all sprint documents and presentations
+- The remaining product backlog
+- A link to the final project video demonstrating completed functionality
+
+### Final Required Content
+The website will also contain:
+- A final cybersecurity assessment
+- A list of implemented features
+- A cybersecurity checklist identifying potential issues to be periodically reviewed
+
