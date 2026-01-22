@@ -1,24 +1,44 @@
-body {
-        font-family: Arial, sans-serif;
-        margin: 0;
-    }
-    nav {
-        background: #333;
-        padding: 10px;
-    }
-    nav a {
-        color: white;
-        margin: 0 10px;
-        text-decoration: none;
-        cursor: pointer;
-    }
-    nav a:hover {
-        text-decoration: underline;
-    }
-    .page {
-        display: none; /* Hide all pages by default */
-        padding: 20px;
-    }
-    .active {
-        display: block; /* Show active page */
-    }
+body{  
+    font-family: Verdana Bold, sans-serif;
+    margin: 0;
+}
+nav { 
+    background: #5457A8;
+    padding: 10px;
+}
+    
+nav a {
+    color: white;
+    margin: 0 10px;
+    text-decoration: none;
+    cursor: pointer;
+}
+    
+nav a:hover {
+    text-decoration: underline;
+}
+
+.page {
+    display: none; /* Hide all pages by default */
+    padding: 20px;
+}
+
+.active {   
+    display: block; /* Show active page */  
+}
+
+h1 {
+    margin-top: 0.5;
+    font-weight: 400;
+    line-height: 1.2;
+}
+
+h1,  h2, p {
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+}
+
+h2 {
+
+}
