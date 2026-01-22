@@ -1,5 +1,5 @@
 body{  
-    font-family: Verdana Bold, sans-serif;
+    font-family: Verdana, sans-serif;
     margin: 0;
 }
 nav { 
@@ -28,17 +28,29 @@ nav a:hover {
 }
 
 h1 {
-    margin-top: 0.5;
+    margin-top: 0.5rem;
     font-weight: 400;
     line-height: 1.2;
 }
 
-h1,  h2, p {
+h1,  h2 {
     text-align: center;
     margin-top: 0;
     margin-bottom: 0.5rem;
 }
 
-h2 {
+#student_name{
+    text-align: left;
+}
 
+.media {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 20px;
+}
+
+#image {
+    width: 180px;
+    height: auto;
 }
