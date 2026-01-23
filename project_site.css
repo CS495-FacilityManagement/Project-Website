@@ -39,18 +39,36 @@ h1,  h2 {
     margin-bottom: 0.5rem;
 }
 
-#student_name{
-    text-align: left;
+.bio-card {
+    max-width: 800px;
+    margin: 40px auto;
 }
 
-.media {
+.student-name {
+    text-align: left;
+    margin-bottom: 6px;
+}
+
+.student-info {
+    text-align: left;
+    margin-bottom: 12px;
+    font-weight: 400;
+}
+
+.bio-content {
     display: flex;
     align-items: flex-start;
-    justify-content: flex-start;
     gap: 20px;
 }
 
-#image {
-    width: 180px;
+.bio-img {
+    width: 140px;
     height: auto;
+    border-radius: 6px;
+}
+
+.bio-text {
+    margin: 0;
+    line-height: 1.5;
+    text-align: left;
 }
