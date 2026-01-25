@@ -1,30 +1,7 @@
-body{  
+/* Global Styles */
+body {  
     font-family: Verdana, sans-serif;
     margin: 0;
-}
-nav { 
-    background: #5457A8;
-    padding: 10px;
-}
-    
-nav a {
-    color: white;
-    margin: 0 10px;
-    text-decoration: none;
-    cursor: pointer;
-}
-    
-nav a:hover {
-    text-decoration: underline;
-}
-
-.page {
-    display: none; /* Hide all pages by default */
-    padding: 20px;
-}
-
-.active {   
-    display: block; /* Show active page */  
 }
 
 h1 {
@@ -33,10 +10,35 @@ h1 {
     line-height: 1.2;
 }
 
-h1,  h2 {
+h1, h2 {
     text-align: center;
     margin-top: 0;
     margin-bottom: 0.5rem;
+}
+
+nav { 
+    background: #5457A8;
+    padding: 10px;
+}
+
+nav a {
+    color: white;
+    margin: 0 10px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+.page {
+    display: none; 
+    padding: 20px;
+}
+
+.active {   
+    display: block;  
 }
 
 .bio-card {
@@ -44,13 +46,17 @@ h1,  h2 {
     margin: 40px auto;
 }
 
-.student-name {
+.student-name,
+.student-info,
+.bio-text {
     text-align: left;
+}
+
+.student-name {
     margin-bottom: 6px;
 }
 
 .student-info {
-    text-align: left;
     margin-bottom: 12px;
     font-weight: 400;
 }
@@ -70,13 +76,12 @@ h1,  h2 {
 .bio-text {
     margin: 0;
     line-height: 1.5;
-    text-align: left;
 }
 
-
 .project-description {
-    max-width: 900px;
-    margin: 40px auto;
+    max-width: 1100px;
+    margin: 60px auto;
+    padding: 0 20px;
     line-height: 1.6;
 }
 
@@ -102,14 +107,59 @@ h1,  h2 {
     margin-bottom: 6px;
 }
 
-.asset-list {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-    column-gap: 20px;
-}
-
 @media (max-width: 600px) {
     .project-description {
         padding: 0 10px;
+        margin-top: 40px;
     }
+}
+
+.project-hero {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.project-hero p {
+    max-width: 800px;
+    margin: 10px auto 0;
+    color: #444;
+}
+
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
+    justify-content: center;
+}
+
+.project-card {
+    background: #ffffff;
+    border-radius: 14px;
+    padding: 22px;
+    border: 1px solid rgba(0,0,0,0.08);
+    transition: transform 0.15s ease;
+    width: 100%; 
+    max-width: 280px;
+}
+
+.project-card h3 {
+    margin-top: 0;
+    color: #5457A8;
+    text-align: left;
+}
+
+.project-card ul {
+    margin: 0;
+    padding-left: 18px;
+}
+
+.project-card li {
+    margin-bottom: 6px;
+    line-height: 1.4;
+}
+
+.asset-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+    gap: 6px 15px;
 }
