@@ -33,13 +33,9 @@ nav a:hover {
 }
 
 .page {
-    display: none; 
     padding: 20px;
 }
 
-.active {   
-    display: block;  
-}
 
 .bio-card {
     max-width: 800px;
