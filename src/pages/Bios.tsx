@@ -1,3 +1,8 @@
+import jadenImg from "../assets/JadenS.jpg";
+import kaitlynImg from "../assets/kaitlyn.jpg";
+import maddoxImg from "../assets/maddox.jpg";
+import ryanImg from "../assets/ryan.png";
+
 export default function Bios() {
   return (
     <div className="page">
@@ -15,7 +20,7 @@ export default function Bios() {
         </h3>
 
         <div className="bio-content">
-          <img className="bio-img" src="/img/kaitlyn.jpg" alt="Kaitlyn Hanson" />
+          <img className="bio-img" src={kaitlynImg} alt="Kaitlyn Hanson" />
           <p className="bio-text">
             Driven computer science student with a solid foundation in C++, Python, Java, and SQL,
             passionate about backend software engineering and eager to develop efficient, scalable
@@ -39,7 +44,7 @@ export default function Bios() {
         </h3>
 
         <div className="bio-content">
-          <img className="bio-img" src="/img/JadenS.jpg" alt="Jaden Sheppard" />
+          <img className="bio-img" src={jadenImg} alt="Jaden Sheppard" />
           <p className="bio-text">
             Computer science student with interests in software engineering and data analytics,
             focused on building reliable user-centered applications and developing practical
@@ -60,7 +65,7 @@ export default function Bios() {
         </h3>
 
         <div className="bio-content">
-          <img className="bio-img" src="/img/ryan.png" alt="Ryan Kutella" />
+          <img className="bio-img" src={ryanImg} alt="Ryan Kutella" />
           <p className="bio-text">
             Computer Science student at The University of Alabama with over 7 years of programming
             experience. Passionate about software development and enjoy turning creative ideas into
@@ -81,7 +86,7 @@ export default function Bios() {
         </h3>
 
         <div className="bio-content">
-          <img className="bio-img" src="/img/maddox.jpg" alt="Maddox Guthrie" />
+          <img className="bio-img" src={maddoxImg} alt="Maddox Guthrie" />
           <p className="bio-text">
             Computer Science student with several years of programming experience. Passionate about
             software development, with a strong interest in backend systems and high-level technical
