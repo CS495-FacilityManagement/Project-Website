@@ -68,8 +68,8 @@ export default function Deliverables() {
 
                 <Document
                     title="Sprint 1 Backlog"
-                    embed="https://drive.google.com/file/d/1ma0xc1VnsiWsKJIGNcICt84ph-gP5seW/preview"
-                    download="https://drive.usercontent.google.com/u/0/uc?id=1ma0xc1VnsiWsKJIGNcICt84ph-gP5seW&export=download"
+                    embed="https://drive.google.com/file/d/1dTFm0a0sGIR2Z7DInRmpW25J3oKbasQN/preview"
+                    download="https://drive.usercontent.google.com/u/0/uc?id=1dTFm0a0sGIR2Z7DInRmpW25J3oKbasQN&export=download"
                 />
 
                 <Presentation
