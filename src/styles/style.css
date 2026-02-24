@@ -185,3 +185,27 @@ nav a:hover {
     grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
     gap: 6px 15px;
 }
+
+.pdf-container {
+    width: 100%;
+    max-width: 960px;
+    margin: 0;
+}
+
+.pdf-container iframe {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    border: 0;
+    display: block;
+}
+
+.deliverable-group {
+    margin-top: 2rem;
+}
+
+.deliverable_group_title {
+    font-size: 1.4rem;
+    font-weight: 600;
+    cursor: pointer;
+    margin-bottom: 1rem;
+}
