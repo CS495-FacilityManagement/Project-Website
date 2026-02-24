@@ -75,7 +75,7 @@ export default function Deliverables() {
                 <Presentation
                     title="Sprint 1 Presentation"
                     embed="https://docs.google.com/presentation/d/e/2PACX-1vR_O_D6YvtTk5SqFLtd2HssH2Vonev0dZvjUO9Ri_hi5OtDNQb9uTZtYDBtNxrfmbDdTkHd_0Fm77Dd/pubembed?start=false&loop=false&delayms=3000"
-                    download=""
+                    download="https://drive.usercontent.google.com/u/0/uc?id=1fUO0LkiTpKzDozJtbR2lDhzRJdOA2m2h&export=download"
                 />
             </Collapsible>
         </div>
