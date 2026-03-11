@@ -61,7 +61,7 @@ export default function Deliverables() {
                 />
 
                 <Document
-                    title="Sprint 1 Backlog Snapshot"
+                    title="Sprint 1 Project Backlog Snapshot"
                     embed="https://drive.google.com/file/d/1DTQPy66ZPsCpuP6J5QTzYqKWl8Z6tYT0/preview"
                     download="https://drive.usercontent.google.com/u/0/uc?id=1DTQPy66ZPsCpuP6J5QTzYqKWl8Z6tYT0&export=download"
                 />
@@ -76,6 +76,29 @@ export default function Deliverables() {
                     title="Sprint 1 Presentation"
                     embed="https://docs.google.com/presentation/d/e/2PACX-1vR_O_D6YvtTk5SqFLtd2HssH2Vonev0dZvjUO9Ri_hi5OtDNQb9uTZtYDBtNxrfmbDdTkHd_0Fm77Dd/pubembed?start=false&loop=false&delayms=3000"
                     download="https://drive.usercontent.google.com/u/0/uc?id=1fUO0LkiTpKzDozJtbR2lDhzRJdOA2m2h&export=download"
+                />
+            </Collapsible>
+
+            <Collapsible title="Sprint 2">
+                <Document 
+                    title="Sprint 2 Planning"
+                    embed="https://docs.google.com/document/d/18O9oNWow31bPtE396PKWvfmRzmC4rrfAajAhONt6w8w/edit?usp=drive_link"
+                    download="https://drive.google.com/uc?export=download&id=18O9oNWow31bPtE396PKWvfmRzmC4rrfAajAhONt6w8w"
+                />
+                <Document 
+                    title="Sprint 2 Project Backlog Snapshot"
+                    embed="https://drive.google.com/file/d/1o2ke4LnsuZrPYu3spMwR-cieawHDMS-c/view?usp=drive_link"
+                    download="https://drive.google.com/uc?export=download&id=1o2ke4LnsuZrPYu3spMwR-cieawHDMS-c"
+                />
+                <Document 
+                    title="Sprint 2 Backlog"
+                    embed="https://drive.google.com/file/d/1Af9XonOrAi616qtBfAsIUROATzULQdBu/view?usp=drive_link"
+                    download="https://drive.google.com/uc?export=download&id=1Af9XonOrAi616qtBfAsIUROATzULQdBu"
+                />
+                <Document 
+                    title="Sprint 2 Presentation"
+                    embed=""
+                    download=""
                 />
             </Collapsible>
         </div>
