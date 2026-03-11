@@ -82,17 +82,17 @@ export default function Deliverables() {
             <Collapsible title="Sprint 2">
                 <Document 
                     title="Sprint 2 Planning"
-                    embed="https://docs.google.com/document/d/18O9oNWow31bPtE396PKWvfmRzmC4rrfAajAhONt6w8w/edit?usp=drive_link"
+                    embed="https://docs.google.com/file/d/18O9oNWow31bPtE396PKWvfmRzmC4rrfAajAhONt6w8w/preview"
                     download="https://drive.google.com/uc?export=download&id=18O9oNWow31bPtE396PKWvfmRzmC4rrfAajAhONt6w8w"
                 />
                 <Document 
                     title="Sprint 2 Project Backlog Snapshot"
-                    embed="https://drive.google.com/file/d/1o2ke4LnsuZrPYu3spMwR-cieawHDMS-c/view?usp=drive_link"
+                    embed="https://drive.google.com/file/d/1o2ke4LnsuZrPYu3spMwR-cieawHDMS-c/preview"
                     download="https://drive.google.com/uc?export=download&id=1o2ke4LnsuZrPYu3spMwR-cieawHDMS-c"
                 />
                 <Document 
                     title="Sprint 2 Backlog"
-                    embed="https://drive.google.com/file/d/1Af9XonOrAi616qtBfAsIUROATzULQdBu/view?usp=drive_link"
+                    embed="https://drive.google.com/file/d/1Af9XonOrAi616qtBfAsIUROATzULQdBu/preview"
                     download="https://drive.google.com/uc?export=download&id=1Af9XonOrAi616qtBfAsIUROATzULQdBu"
                 />
                 <Document 
