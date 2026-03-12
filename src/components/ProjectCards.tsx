@@ -2,8 +2,8 @@ const projectCards = [
   {
     title: "Project Scope",
     items: [
-      "UI prototype for an AI Facilities Management platform",
-      "Simulated AI insights with mock & synthetic data",
+      "UI prototype for a Facilities Management platform",
+      "Simulated insights with mock & synthetic data",
       "Role-Aware UI for various facility employees",
       "Industry-style engagement with sponsor as Product Owner",
     ],
@@ -12,8 +12,9 @@ const projectCards = [
     title: "User Experience Flow",
     items: [
       "Dashboard summarizing facility-wide risk & recommended actions",
-      "Prioritized high-risk assets with recommended actions",
-      "Asset lists and detail views",
+      "Detailed Asset List Views",
+      "Building and Asset Management",
+      "Maintenance and Facility Health Reports"
     ],
   },
   {
@@ -38,9 +39,9 @@ const projectCards = [
   {
     title: "Technical Implementation",
     items: [
-      "React, TypeScript, and Next.js frontend",
-      "Modern UI/UX and data visualization",
-      "Internet-hosted prototype",
+      "Next.JS, Typescript and Tailwind CSS",
+      "Modern UI for proper data visualization",
+      "Internet-hosted prototype through AWS",
       "Secure-by-design architecture",
     ],
   },
