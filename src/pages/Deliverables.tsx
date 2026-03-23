@@ -97,8 +97,8 @@ export default function Deliverables() {
                 />
                 <Document 
                     title="Sprint 2 Presentation"
-                    embed=""
-                    download=""
+                    embed="https://docs.google.com/file/d/1GjD589UfxoqtvPqmgETViXKX83I3euLeIMVfxHZWdic/preview"
+                    download="https://docs.google.com/presentation/d/1GjD589UfxoqtvPqmgETViXKX83I3euLeIMVfxHZWdic/export/pdf"
                 />
             </Collapsible>
         </div>
