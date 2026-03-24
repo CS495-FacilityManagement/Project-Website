@@ -2,8 +2,8 @@ const projectCards = [
   {
     title: "Project Scope",
     items: [
-      "UI prototype for an AI Facilities Management platform",
-      "Simulated AI insights with mock & synthetic data",
+      "UI prototype for a Facilities Management platform",
+      "Simulated insights with mock data",
       "Role-Aware UI for various facility employees",
       "Industry-style engagement with sponsor as Product Owner",
     ],
@@ -12,8 +12,9 @@ const projectCards = [
     title: "User Experience Flow",
     items: [
       "Dashboard summarizing facility-wide risk & recommended actions",
-      "Prioritized high-risk assets with recommended actions",
-      "Asset lists and detail views",
+      "Detailed Asset List Views",
+      "Building, Asset, and User Management",
+      "Maintenance and Facility Health Reports"
     ],
   },
   {
@@ -36,12 +37,22 @@ const projectCards = [
     ],
   },
   {
-    title: "Technical Implementation",
+    title: "FrontEnd TechStack",
     items: [
-      "React, TypeScript, and Next.js frontend",
-      "Modern UI/UX and data visualization",
-      "Internet-hosted prototype",
-      "Secure-by-design architecture",
+      "Next.JS (React & Typescript)", "Tailwind CSS",
+      "Gridstack Widget Library",
+      "AWS Amplify",
+    ],
+  },
+  {
+    title: "BackEnd TechStack",
+    items: [
+      "Python (FastAPI)",
+      "PostgreSQL (Amazon RDS)",
+      "AWS Lambda",
+      "API Gateway (HTTP API)",
+      "Mangum (ASGI adapter for Lambda)",
+      "Amazon Cognito (JWT authentication)",
     ],
   },
 ];
