@@ -1,19 +1,18 @@
 # Database Documentation
 
-## Overview
-
-This PostgreSQL (RDS) database supports a facility and asset management application. It tracks physical facilities, buildings within those facilities, assets within buildings, and maintenance work orders. Access is role-based, with application-level database roles scoped to read-only or read-write operations.
+This PostgreSQL (RDS) database supports a facility and asset management application. 
+It tracks physical facilities, buildings within those facilities, assets within buildings, and maintenance work orders. 
+Access is role-based, with application-level database roles scoped to read-only or read-write operations.
 
 ---
 
 ## Tables
 
 ### `facilities`
-
-Top-level entity representing a physical facility location.
+##### Top-level entity representing a physical facility location.
 
 | Column | Type | Constraints | Description |
-|---|---|---|---|
+|----|----|----|----|
 | `facility_id` | `INT` | PK, auto-generated | Unique facility identifier |
 | `facility_name` | `VARCHAR(255)` | NOT NULL | Name of the facility |
 | `address` | `VARCHAR(255)` | | Street address |

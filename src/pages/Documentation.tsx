@@ -1,4 +1,6 @@
 import ReactMarkdown from "react-markdown";
+import remarkGfm from "remark-gfm";
+
 import UserGuide from "../components/Documentation/UserGuide.md?raw";
 import Testing from "../components/Documentation/Testing.md?raw";
 import Database_Guide from "../components/Documentation/Database_Guide.md?raw";
@@ -25,22 +27,22 @@ export default function Documentation() {
             </Collapsible>
             <Collapsible title="Testing">
                 <div className="markdown-body">
-                    <ReactMarkdown>{Testing}</ReactMarkdown>
+                    <ReactMarkdown remarkPlugins={[remarkGfm]}>{Testing}</ReactMarkdown>
                 </div>
             </Collapsible>
              <Collapsible title="Database">
                 <div className="markdown-body">
-                    <ReactMarkdown>{Database_Guide}</ReactMarkdown>
+                    <ReactMarkdown remarkPlugins={[remarkGfm]}>{Database_Guide}</ReactMarkdown>
                 </div>
             </Collapsible>
-             <Collapsible title="Development_Guide">
+             <Collapsible title="Development Guide">
                 <div className="markdown-body">
-                    <ReactMarkdown>{Development_Guide}</ReactMarkdown>
+                    <ReactMarkdown remarkPlugins={[remarkGfm]}>{Development_Guide}</ReactMarkdown>
                 </div>
             </Collapsible>
-            <Collapsible title="Lamda_Guide">
+            <Collapsible title="Lamda API Guide">
                 <div className="markdown-body">
-                    <ReactMarkdown>{Lambda_Guide}</ReactMarkdown>
+                    <ReactMarkdown remarkPlugins={[remarkGfm]}>{Lambda_Guide}</ReactMarkdown>
                 </div>
             </Collapsible>
         </div>

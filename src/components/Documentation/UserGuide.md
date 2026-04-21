@@ -1,7 +1,3 @@
-
-# Facility Management Platform User Guide
-  
-
 ## Navigating the Platform
 
 All available pages can be accessed through the dropdown menu in the upper‑right corner of the platform. 

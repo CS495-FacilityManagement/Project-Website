@@ -1,10 +1,16 @@
-# Development Environment Setup
-
-## Overview
-
 This project consists of a **Next.js frontend** connected to an **AWS backend** (Amplify, Cognito, RDS, and Lambda). Frontend development runs locally and connects to the live AWS backend for authentication and data. The AWS backend is already provisioned — this document covers both how to run the frontend locally and how the backend is configured for reference or recreation.
 
 ---
+## Table of Contents
+
+1. [Prerequisites](#prerequisites)
+2. [Clone the Repository](#clone-the-repository)
+3. [Install Dependencies](#install-dependencies)
+4. [Environment Variables](#environment-variables)
+5. [Running the App — Local Mode (No AWS Required)](#running-the-app--local-mode-no-aws-required)
+6. [Running the App — AWS-Connected Mode](#running-the-app--aws-connected-mode)
+7. [Project Structure](#project-structure)
+8. [Available Scripts](#available-scripts)
 
 ## Part 1 — Local Frontend Setup
 
@@ -74,38 +80,120 @@ When prompted for **AWS Region**, enter: `us-east-1`
 A browser window will open — sign in with your AWS credentials. If you hit a credential error at any later step, re-run `aws login`.
 
 ---
-
 ### Running the Frontend
 
-#### 1. Install dependencies
+#### 1. Clone the Repository
 
-From the project root:
+```bash
+git clone <REPO_URL>
+cd Next-Web-App
+```
+
+#### 2. Install dependencies
+Run this from the project root. This installs all Node packages listed in `package.json`.
 
 ```bash
 npm install
 ```
 
-#### 2. Connect to the Amplify backend
+**Key dependencies installed:**
 
-This generates the `amplify_outputs.json` file needed for authentication and backend connectivity. Replace `<APP-ID>` with the Amplify project's App ID:
-
-```bash
-npx ampx generate outputs --app-id d30o2968go7b72 --branch main --out-dir .
-```
-
-This creates `amplify_outputs.json` in the project root. This file should not be committed to source control as it contains environment-specific configuration.
-
-> If this step fails with a credentials error, run `aws login` and try again.
-
-#### 3. Start the development server
-
-```bash
-npx next dev
-```
-
-The frontend will be available at [http://localhost:3000](http://localhost:3000).
+| Package | Purpose |
+|---|---|
+| `next` | React framework (App Router, SSR, Server Actions) |
+| `react` / `react-dom` | UI library (v19) |
+| `aws-amplify` | AWS Cognito authentication client |
+| `@aws-amplify/adapter-nextjs` | Amplify SSR adapter for Next.js |
+| `gridstack` | Drag-and-drop dashboard widget layout |
+| `next-themes` | Light/dark theme switching |
+| `tailwindcss` | Utility-first CSS framework (v4) |
+| `zod` | Runtime schema validation |
+| `typescript` | Type checking |
 
 ---
+
+## Environment Variables
+
+Create a `.env` file in the project root (it is already present — do not commit secrets to git):
+
+```
+AMPLIFY_APP_ORIGIN=http://localhost:3000
+FACILITY_API_BASE_URL=https://<your-api-gateway-id>.execute-api.us-east-1.amazonaws.com
+```
+
+| Variable | Description |
+|---|---|
+| `AMPLIFY_APP_ORIGIN` | The origin URL of the app. Use `http://localhost:3000` for local development. |
+| `FACILITY_API_BASE_URL` | Base URL of the Facility Management REST API (AWS API Gateway). Required in AWS-Connected Mode; unused in Local Mode. |
+
+---
+
+## Running the App — Local Mode (No AWS Required)
+
+Local Mode uses an in-memory data store with pre-seeded buildings, assets, and users. No AWS account, no credentials, and no `amplify_outputs.json` are needed. **This is the recommended starting point for new developers.**
+
+### 1. Start the development server
+
+```bash
+npm run dev
+```
+
+Open [http://localhost:3000](http://localhost:3000) in your browser.
+
+### 2. Enable Local Mode
+
+A **"Enable Local Data"** button is fixed in the **bottom-right corner** of every page. Click it to switch the app into Local Mode. The button turns amber when Local Mode is active.
+
+Enabling Local Mode sets a browser cookie that replaces all API calls with the in-memory data store for the duration of your session. Disabling it (clicking the button again) restores live API calls.
+
+### 3. Sign In
+
+After enabling Local Mode, the login page shows the available test accounts and their password:
+
+| Email | Role |
+|---|---|
+| `alex@capstone.local` | Facility Manager |
+| `sarah@capstone.local` | Facility Manager |
+| `mike@capstone.local` | Technician |
+
+**Password for all accounts:** `Password123.`
+
+The in-memory store is reset each time the Next.js server process restarts (i.e., when you re-run `npm run dev`). Any changes you make in Local Mode are lost on restart.
+
+---
+
+## Running the App — AWS-Connected Mode
+
+This mode uses real AWS Cognito for authentication and the live Facility API. You need an AWS account with access to the project.
+
+### 1. Log in to AWS
+
+```bash
+aws login
+```
+
+When prompted for **AWS Region**, enter `us-east-1`. A browser window will open — sign in with your AWS credentials.
+
+### 2. Generate Amplify outputs
+
+This creates the `amplify_outputs.json` file that tells the app where your Cognito user pool is. Replace `<APP-ID>` with the Amplify app ID (ask a team member or find it in the AWS Amplify console).
+
+```bash
+npx ampx generate outputs --app-id <APP-ID> --branch main --out-dir .
+```
+
+If you get an AWS credential error, re-run `aws login` first.
+
+### 3. Start the development server
+
+```bash
+npm run dev
+```
+
+Open [http://localhost:3000](http://localhost:3000). Sign in with your Cognito credentials. Make sure **Local Mode is disabled** (the "Enable Local Data" button should be blue, not amber).
+
+---
+
 
 ## Part 2 — AWS Backend
 
