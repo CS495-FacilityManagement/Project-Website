@@ -209,3 +209,12 @@ nav a:hover {
     cursor: pointer;
     margin-bottom: 1rem;
 }
+
+.markdown-body img {
+  max-width: 600px;   
+  width: 100%;       
+  height: auto;
+  border-radius: 8px; 
+  display: block;
+  margin: 1rem auto; 
+}
