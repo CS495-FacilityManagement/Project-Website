@@ -95,7 +95,7 @@ export default function Deliverables() {
                     embed="https://drive.google.com/file/d/1Af9XonOrAi616qtBfAsIUROATzULQdBu/preview"
                     download="https://drive.google.com/uc?export=download&id=1Af9XonOrAi616qtBfAsIUROATzULQdBu"
                 />
-                <Document 
+                <Presentation 
                     title="Sprint 2 Presentation"
                     embed="https://docs.google.com/file/d/1GjD589UfxoqtvPqmgETViXKX83I3euLeIMVfxHZWdic/preview"
                     download="https://docs.google.com/presentation/d/1GjD589UfxoqtvPqmgETViXKX83I3euLeIMVfxHZWdic/export/pdf"
