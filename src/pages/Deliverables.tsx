@@ -101,6 +101,28 @@ export default function Deliverables() {
                     download="https://docs.google.com/presentation/d/1GjD589UfxoqtvPqmgETViXKX83I3euLeIMVfxHZWdic/export/pdf"
                 />
             </Collapsible>
+            <Collapsible title="Sprint 3">
+                <Document
+                    title="Sprint 3 Planning"
+                    embed="https://docs.google.com/document/d/1ZG2Pkq2SAhkVZWsaHmPJm4eFj4oDQ_Pk3eEPDLI0xjg/preview"
+                    download="https://docs.google.com/document/d/1ZG2Pkq2SAhkVZWsaHmPJm4eFj4oDQ_Pk3eEPDLI0xjg/export/pdf"
+                />
+                <Document
+                    title="Sprint 3 Project Backlog Snapshot"
+                    embed="https://drive.google.com/file/d/1KnPadLe4x5hy564zbx0VgmJdYs4wYHyS/preview"
+                    download="https://drive.google.com/file/d/1KnPadLe4x5hy564zbx0VgmJdYs4wYHyS/export/pdf"
+                />
+                <Document
+                    title="Sprint 3 Backlog"
+                    embed="https://drive.google.com/file/d/12mGrKhCqp0qMSbaD2h1G7LVdaKh5f3wC/preview"
+                    download="https://drive.google.com/file/d/12mGrKhCqp0qMSbaD2h1G7LVdaKh5f3wC/export/pdf"
+                />
+                <Document
+                    title="Sprint 3 Presentation"
+                    embed="https://docs.google.com/presentation/d/1bZ6cVXeejqNthv0k7x1kyWbaEhKLKHF7G4Y4TI89U08/preview"
+                    download="https://docs.google.com/presentation/d/1bZ6cVXeejqNthv0k7x1kyWbaEhKLKHF7G4Y4TI89U08/export/pdf"
+                />
+            </Collapsible>
         </div>
     );
 }
