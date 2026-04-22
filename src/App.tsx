@@ -2,6 +2,7 @@ import { Routes, Route } from "react-router-dom";
 import NavBar from "./components/NavBar";
 import Home from "./pages/Home";
 import Deliverables from "./pages/Deliverables";
+import Documentation from "./pages/Documentation";
 import Bios from "./pages/Bios";
 import "./styles/style.css";
 
@@ -14,6 +15,7 @@ export default function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/deliverables" element={<Deliverables />} />
+          <Route path="/documentation" element={<Documentation />} />
           <Route path="/bios" element={<Bios />} />
         </Routes>
       </div>
