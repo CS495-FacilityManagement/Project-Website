@@ -1,3 +1,5 @@
+#### Written by Ryan Kutella 
+
 This project consists of a **Next.js frontend** connected to an **AWS backend** (Amplify, Cognito, RDS, and Lambda). Frontend development runs locally and connects to the live AWS backend for authentication and data. The AWS backend is already provisioned — this document covers both how to run the frontend locally and how the backend is configured for reference or recreation.
 
 ---
