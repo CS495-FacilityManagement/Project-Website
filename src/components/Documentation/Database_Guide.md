@@ -1,3 +1,5 @@
+#### Written by Maddox Guthrie
+
 # Database Documentation
 
 This PostgreSQL (RDS) database supports a facility and asset management application. 

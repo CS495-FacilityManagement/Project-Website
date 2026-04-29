@@ -1,3 +1,5 @@
+#### Written by Maddox Guthrie 
+
 # Lambda Documentation
 
 ## Overview
