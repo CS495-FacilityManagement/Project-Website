@@ -50,10 +50,23 @@ export default function Documentation() {
                     <ReactMarkdown remarkPlugins={[remarkGfm]}>{Development_Guide}</ReactMarkdown>
                 </div>
             </Collapsible>
-            <Collapsible title="Lamda API Guide">
+            <Collapsible title="Lambda API Guide">
                 <div className="markdown-body">
                     <a href={Lambda_GuideURL} download="Lambda_Guide.md"> Download</a>
                     <ReactMarkdown remarkPlugins={[remarkGfm]}>{Lambda_Guide}</ReactMarkdown>
+                </div>
+            </Collapsible>
+            <Collapsible title="Demo Video">
+                <div className="markdown-body">
+                    <div className="documentation-video">
+                        <iframe
+                            src="https://www.youtube.com/embed/efFMyLwLpzQ"
+                            title="Facility Management Demo Video"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            referrerPolicy="strict-origin-when-cross-origin"
+                            allowFullScreen
+                        />
+                    </div>
                 </div>
             </Collapsible>
         </div>
